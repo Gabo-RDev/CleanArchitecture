@@ -37,3 +37,35 @@ int[] numbers = new int[5]
 //numbers[5] = 5;
 
 Console.WriteLine(numbers[4]);
+
+// Condicionales
+var age = 21;
+if(age > 60)
+{
+    Console.WriteLine("Es de la tercera edad");
+} else if(age  > 18)
+{
+    Console.WriteLine("Es mayor de edad");
+} else
+{
+    Console.WriteLine("Es menor de edad");
+}
+
+// Switch
+
+switch (age)
+{
+    case < 18:
+        {
+            Console.WriteLine("Es menor de edad");
+            break;
+        }
+    case < 60:
+        {
+            Console.WriteLine("Es mayor de edad");
+            break;
+        }
+    default:
+        Console.WriteLine("Es de tercera edad");
+        break;
+}
