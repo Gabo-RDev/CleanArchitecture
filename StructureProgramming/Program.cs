@@ -69,3 +69,27 @@ switch (age)
         Console.WriteLine("Es de tercera edad");
         break;
 }
+
+// Loops
+
+var names = new string[3]
+{
+    "Gabriel", "Wilmer", "Dayron"
+};
+
+int i = 0;
+do
+{
+    Console.WriteLine(names[i]);
+    i++;
+} while(i < names.Length);
+
+while(i < names.Length)
+{
+    Console.WriteLine(names[i]);
+}
+
+for (int j = 0; j < numbers.Length; j++)
+{
+    Console.WriteLine(numbers[j]);
+}
