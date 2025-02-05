@@ -93,3 +93,27 @@ for (int j = 0; j < numbers.Length; j++)
 {
     Console.WriteLine(numbers[j]);
 }
+
+// Functions
+int res = Area(30, 20);
+
+Console.WriteLine(res);
+
+int Area(int x, int y)
+{
+    int res = x * y;
+    return res;
+}
+
+// No retorna nada
+Show("Arquitectura Limpia");
+Bye();
+void Show(string message)
+{
+    Console.WriteLine(message);
+}
+
+void Bye()
+{
+    Show("Adios");
+}
