@@ -1,10 +1,6 @@
-﻿Beer presidente = new Beer()
-{
-	Name = "Presidente",
-	Price = 3
-};
+﻿Beer presidente = new Beer("Presidente", 3);
 
-var coronaBeer = new Beer();
+var coronaBeer = new Beer("Republica", 1.2m);
 coronaBeer.Name = "Corona";
 coronaBeer.Price = 1.5m;
 
@@ -19,6 +15,12 @@ public class Beer
 	public string Name { get; set; }
 
 	public decimal Price {  get; set; }	
+
+	public Beer(string name, decimal price)
+	{
+		Name = name; 
+		Price = price;
+	}
 
 	public string GetInfo()
 	{
