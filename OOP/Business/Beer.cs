@@ -41,7 +41,14 @@
 		public string GetInfo()
 		{
 			return "Nombre: " + Name + ", Precio: $" + Price + ", Alcohol " + Alcohol;
+		} 
+
+		public string GetInfo(string message)
+		{
+			return message + " " + GetInfo();
 		}
+
+		public string GetInfo(int number) { return number + ".- " + GetInfo(); }
 	}
 }
 

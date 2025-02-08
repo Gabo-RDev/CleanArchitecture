@@ -6,3 +6,5 @@ var delirium = new ExpiringBeer("Delirium", 4, 8, new DateTime(2025,12,01));
 
 Console.WriteLine(presidente.Name);
 Console.WriteLine(delirium.GetInfo());
+Console.WriteLine(delirium.GetInfo("Una cerveza que caduca: "));
+Console.WriteLine(delirium.GetInfo(5));
