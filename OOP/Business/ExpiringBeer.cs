@@ -8,6 +8,7 @@ namespace OOP.Business
 			: base(name, price, alcohol)
 		{
 			Expiration = expiration;
+			var p = Price;
 		}
 	}
 }

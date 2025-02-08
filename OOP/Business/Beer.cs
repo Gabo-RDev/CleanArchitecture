@@ -6,7 +6,7 @@
 		private decimal _alcohol; // campo
 		public string Name { get; set; }
 
-		public decimal Price { get; set; } // Propiedad automatica
+		protected decimal Price { get; set; } // Propiedad automatica
 
 		public decimal Alcohol // Propiedad
 		{
