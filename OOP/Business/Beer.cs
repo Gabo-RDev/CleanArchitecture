@@ -15,7 +15,10 @@
 			{
 				if (value < 0)
 				{
-					value = 0;
+					_alcohol = 0;
+				} else
+				{
+					_alcohol = value;
 				}
 			}
 		}
