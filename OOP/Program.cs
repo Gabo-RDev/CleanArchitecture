@@ -1,29 +1,45 @@
-﻿Beer presidente = new Beer("Presidente", 3);
-
-var coronaBeer = new Beer("Republica", 1.2m);
-coronaBeer.Name = "Corona";
-coronaBeer.Price = 1.5m;
-
+﻿Beer presidente = new Beer("Presidente", 3, -2);
 
 Console.WriteLine(presidente.Name);
-Console.WriteLine(coronaBeer.Name + " $ " + coronaBeer.Price);
-Console.WriteLine(presidente.GetInfo());
+Console.WriteLine(presidente.SAlcohol);
 
 
 public class Beer
 {
+	private decimal _alcohol; // campo
 	public string Name { get; set; }
 
-	public decimal Price {  get; set; }	
+	public decimal Price { get; set; } // Propiedad automatica
 
-	public Beer(string name, decimal price)
+	public decimal Alcohol // Propiedad
 	{
-		Name = name; 
+		get { return _alcohol; }
+		set
+		{
+			if (value < 0)
+			{
+				value = 0;
+			}
+		}
+	}
+
+	public string SAlcohol
+	{
+		get
+		{
+			return "Alcohol: " + _alcohol.ToString();
+		}
+	}
+
+	public Beer(string name, decimal price, decimal alcohol)
+	{
+		Name = name;
 		Price = price;
+		Alcohol = alcohol;
 	}
 
 	public string GetInfo()
 	{
-		return "Nombre: "+Name + ", Precio: $" + Price;
+		return "Nombre: " + Name + ", Precio: $" + Price + ", Alcohol " + Alcohol;
 	}
 }
