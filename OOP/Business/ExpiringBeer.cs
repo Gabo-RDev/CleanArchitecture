@@ -10,5 +10,11 @@ namespace OOP.Business
 			Expiration = expiration;
 			var p = Price;
 		}
+
+		public override string GetInfo()
+		{
+			return "Cerverza con caducidad: " + Name + ", " + "Precio: $ " + Price + ", Alcohol: "
+				+ Alcohol + ", caducidad: " + Expiration.Date.ToString();
+		}
 	}
 }

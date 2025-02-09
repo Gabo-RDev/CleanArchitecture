@@ -38,7 +38,7 @@
 			Alcohol = alcohol;
 		}
 
-		public string GetInfo()
+		public virtual string GetInfo()
 		{
 			return "Nombre: " + Name + ", Precio: $" + Price + ", Alcohol " + Alcohol;
 		} 
