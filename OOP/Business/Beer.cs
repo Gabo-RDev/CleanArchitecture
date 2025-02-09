@@ -16,7 +16,8 @@
 				if (value < 0)
 				{
 					_alcohol = 0;
-				} else
+				}
+				else
 				{
 					_alcohol = value;
 				}
@@ -31,7 +32,7 @@
 			}
 		}
 
-		public Beer(string name, decimal price, decimal alcohol, int quantity)
+		public Beer(string name, decimal price, decimal alcohol, int quantity) : base(quantity)
 		{
 			Name = name;
 			Price = price;
@@ -42,7 +43,7 @@
 		public virtual string GetInfo()
 		{
 			return "Nombre: " + Name + ", Precio: $" + Price + ", Alcohol " + Alcohol;
-		} 
+		}
 
 		public string GetInfo(string message)
 		{
